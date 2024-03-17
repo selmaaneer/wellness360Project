@@ -1,12 +1,14 @@
 {
-  "name": "wellness360-backend",
+  "name": "wellness360Project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm i"
+    "server": "nodemon index.js",
+    "client": "npm start --prefix ./wellness360",
+    "dev": "concurrently \"npm start\" \"npm run clint\""
   },
   "author": "",
   "license": "ISC",
